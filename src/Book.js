@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
 
-class Books extends Component {
+class Book extends Component {
 
     constructor(props) {
         super(props)
@@ -56,4 +56,4 @@ class Books extends Component {
     }
 }
 
-export default Books
+export default Book

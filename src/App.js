@@ -2,7 +2,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import ListBooks from './ListBooks'
+import BookShelf from './BookShelf'
 import SearchBooks from './SearchBooks'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
@@ -83,19 +83,19 @@ class BooksApp extends React.Component {
               <h1>MyReads</h1>
             </div>
             <div className="list-books-content">
-              <ListBooks
+              <BookShelf
                 onMoveBooksToAnotherCategory={this.moveBooksToAnotherCategory}
                 books={currentlyReading}
                 title='Currently Reading'
                 getBookById={this.getBookById}
               />
-              <ListBooks
+              <BookShelf
                 onMoveBooksToAnotherCategory={this.moveBooksToAnotherCategory}
                 books={wantToRead}
                 title='Want to Read'
                 getBookById={this.getBookById}
               />
-              <ListBooks
+              <BookShelf
                 onMoveBooksToAnotherCategory={this.moveBooksToAnotherCategory}
                 books={readAlready}
                 title='Done Reading'

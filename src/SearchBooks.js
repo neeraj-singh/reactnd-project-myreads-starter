@@ -26,7 +26,7 @@ class SearchBooks extends Component {
   updateQuery = (query) => {
     this.setState({ query: query.trim() })
 
-    if(query.trim() !== '') {
+    if (query.trim() !== '') {
       BooksAPI.search(query, 20).then(books => this.setState({
         searchedBooks: books
       }))
@@ -74,13 +74,13 @@ class SearchBooks extends Component {
 
             {
               showingBooks.map((book) => (
-              <Book
-                book={book ? book : null}
-                key={book.id}
-                onMoveBooksToAnotherCategory={onMoveBooksToAnotherCategory}
-                getBookById={getBookById}
-               />
-            ))}
+                <Book
+                  book={book ? book : null}
+                  key={book.id}
+                  onMoveBooksToAnotherCategory={onMoveBooksToAnotherCategory}
+                  getBookById={getBookById}
+                />
+              ))}
 
           </ol>
         </div>

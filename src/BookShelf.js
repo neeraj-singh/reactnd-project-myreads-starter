@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Book from './Book'
 import sortBy from 'sort-by'
 
-class ListBooks extends Component {
+class BookShelf extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -45,4 +45,4 @@ class ListBooks extends Component {
     }
 }
 
-export default ListBooks
+export default BookShelf
