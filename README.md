@@ -1,6 +1,5 @@
-This is the starter template for the final assessment project for Udacity's React Fundamentals course, developed by [React Training](https://reacttraining.com). The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+This is forked from the starter template for the final assessment project for Udacity's React Fundamentals course, developed by [React Training](https://reacttraining.com). In this project using react dom router navigation and action has been set for books in different shelvs. There are three categories of books reading, want to read and done reading. Any books can be jumblled on any of the three shelvs or can be removed from all. Saerch page is also there where other books can be found based on the some predefined serch terms and then can be categoriesd. 
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
 
 ## Backend Server
 
