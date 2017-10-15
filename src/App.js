@@ -47,7 +47,7 @@ class BooksApp extends React.Component {
 
   moveBooksToAnotherCategory(event, book) {
     let shelfValue = event.target.value;
-    BooksAPI.update(book, event.target.value).then(() => {
+    BooksAPI.update(book, shelfValue).then(() => {
       book.shelf = shelfValue;
       this.setState(state => ({
         books: state.books.filter(b => b.id !== book.id).concat([book])
